@@ -1,0 +1,642 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: lightblue;
+    color:aliceblue;
+}
+
+.card{
+    background: url(https://pixabay.com/static/frontend/3c346409d336d5f09a7f.svg);
+    
+}
+
+
+
+
+
+/* ***********************--------Search Box 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #72c8d3;
+}
+
+.container{
+    position: relative;
+    height: 50px;
+}
+
+.search{
+    outline: none;
+    background-color: rgb(226, 114, 151);
+    color: white;
+    border: 0;
+    height: 70px;
+    width: 70px;
+    padding: 15px;
+    font-size: 1rem;
+    transition: width 0.5s ease;
+    font-weight: 600;
+}
+
+.button{
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 70px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    outline: none;
+    border-radius: 5px;
+}
+
+.container.active .search{
+    width: 200px;
+}
+
+
+.container.active .button{
+    transform: translatex(198px);
+    background-color: #db802a;
+}
+
+.button.active{
+    margin-left: 1.5rem;
+}
+
+.fa-times{
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-times.active{
+    opacity: 1;
+}
+
+
+/* ***********************--------Scratcher 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: repeating-linear-gradient(
+        0deg,
+        #fff 0%,
+        #fff 50%,
+        #000 50%,
+        #000 100%
+    ),repeating-linear-gradient(
+        90deg,
+        #aaa 0%,
+        red 50%,
+        red 50%,
+        #555 100%
+    )    ;
+    background-size: 30px 30px;
+    background-blend-mode: difference;
+    cursor: grab;
+}
+
+span{
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #333;
+    pointer-events: none;
+    border-radius: 50%;
+    background: url(https://cdn.pixabay.com/photo/2024/04/29/06/21/ai-generated-8726859_960_720.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+/* ***********************--------Tab Preview 
+
+/* 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #00ddaa;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    transition: all 1s;
+}    
+
+.wrapper{
+    width: 750px;
+    height: 400px;
+    box-shadow: 0px 2px 4px black;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+.container{
+    position: relative;
+    width: 750px;
+    height: 400px;
+    box-shadow: 3px 2ox 4px rgba(0,0,0,0.1);
+}
+
+nav{
+    position: absolute;
+    top: 5%;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid gainsboro;
+    background-color: darkgray;
+    color: rgb(44, 80, 148);
+}
+
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: azure;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.link:hover{
+    color: #9c300f;
+}
+
+.link.tabOne{
+    background-color: #8d357e;
+    color: white;
+}
+
+.link.tabTwo{
+    background-color: #8d357e;
+    color: white;
+}
+
+.link.tabThree{
+    background-color: #8d357e;
+    color: white;
+}
+
+.info{
+    display: flex;
+    width: 750px;
+    height: 100%;
+    padding-top: 2rem;
+}
+
+.item{
+    width: 850px;
+    color: black;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.link{
+    transition: all 0.3s;
+}
+
+.neon-glow{
+    animation: neon-glowanimation 1.5s infinite alternate;
+}
+
+@keyframes neon-glowanimation {
+    0%{
+        box-shadow: 0px 0px 10px rgba(0,0,0,1);
+    }
+    100%{
+        box-shadow: 0px 0px 20px rgba(0,0,0,1);
+    }
+}
+
+.item.active i{
+    font-size: 9rem;
+} */
+
+
+
+
+
+
+/* ***********************--------Captcha Generator and Checking Match
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #8aa3c9, #46a07a,#489226 );
+    animation: colorChange 10s infinite alternate; 
+}
+
+@keyframes colorChange {
+    0%{
+        background: #8aa3c9;
+    }
+    100%{
+        background: #8aa111;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: aliceblue;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,1,0.5);
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+    color:#51a0cc;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom:  20px;
+}
+
+div{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+button{
+    padding: .5rem;
+    border-radius: 1rem;
+    margin: 5px;
+    font-size: 1rem;
+}
+button:hover{
+    background: #c77a23;
+    transform: scale(1.1);
+}
+
+.generator{
+    font-size: 2rem;
+    padding: 1rem;
+    background: #af9f9f;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 5px;
+    width: 250px;
+    box-shadow: 2px 2px 4px rgba(106, 106, 110, 0.5);
+}
+
+.client-text{
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background: #42574e;
+    color: aliceblue;
+}
+
+.submit{
+    background: #8d9692;
+    color: aliceblue;
+}
+
+.submit:hover{
+    background: #b68a38;
+}
+
+.refresh{
+    background: #357256;
+    color: #cebaba;
+}
+
+.submit:hover{
+    background: #4b4e4d;
+}
+*/
+
+
+
+
+/* ***********************--------Scroll Indicator
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #8aa3c9, #46a07a,#489226 );
+}
+.text{
+    color: aliceblue;
+    line-height: 10rem;
+    text-align: center;
+}
+
+span{
+    padding: 1rem;
+    background: #c7b2b2;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: .5rem;
+    display: inline-block;
+    transition: transform 0.2s;
+    width: 150px;
+}
+
+span:hover{
+    transform: scale(1.05);
+}
+
+.indicator{
+    background: linear-gradient(to right, #db7e62, #acb69e,#af738f );
+    height: 20px;
+    border-radius: 4px;
+    width: 5%;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+
+*/
+
+
+
+/* ***********************--------Bell Notification
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button{
+    cursor: pointer;
+    background-color: #882233;
+    color: aliceblue;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 0px rgba(20, 15, 15, 0.1);
+    z-index: 9999;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+
+.button:active{
+    transform: translateY(10%) translateX(10%);
+    box-shadow: 0px 0px 0px #fff
+}
+
+.notification{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    position: relative;
+    color: #f2f2f2;
+}
+
+.notification::after{
+    min-width: 20px;
+    height: 20px;
+    content: attr(data-count);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dd9da8;
+    position: absolute;
+    top:5px;
+    right: 5px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.notification::before{
+    content: "\f0f3";
+    font-family: "fontAwesome";
+    display: block;
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.notification::after{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.notification.notify::before{
+    animation: bell 1s ease-out;
+    transform-origin: center top;
+}
+
+@keyframes bell {
+    0%{
+        transform: rotate(40deg)
+    }
+    12.5%{
+        transform: rotate(-35deg)
+    }
+    25%{
+        transform: rotate(30deg)
+    }
+    37.5%{
+        transform: rotate(-25deg)
+    }
+    50%{
+        transform: rotate(20deg)
+    }
+    62.5%{
+        transform: rotate(-15deg)
+    }
+    75%{
+        transform: rotate(10deg)
+    }
+    87.5%{
+        transform: rotate(-5deg)
+    }
+    100%{
+        transform: rotate(0deg)
+    }
+}
+*/
+
+
+
+
+
+/* ***********************--------Jumping Word
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(to right,#04d2f7,#f03efa);
+}
+
+.letters{
+    perspective: 1000px;
+    font-family: cursive;
+    color: ghostwhite;
+}
+
+.letters span{
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    line-height: 0.8;
+    font-size: 10rem;
+}
+
+.letters span.active{
+    animation: jump 2s ease-in-out;
+    transform-origin: bottom left;
+
+}
+
+@keyframes jump {
+    0%{
+        transform: translate(0,0) rotate(180deg)
+    }
+    25%{
+        transform: scale(2) translate(0,-150px)
+    }
+    75%{
+        transform: scale(1.1,1.1) translate(0,200px);
+    }
+    100%{
+        transform: translate(0,0) rotate(360deg);
+    }
+}
+*/
+
+/* ***********************--------Cursor Animation
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+    cursor: grabbing;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.container span{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+.container span::before{
+    content: "";
+    position: absolute;
+    background: url(https://cdn.pixabay.com/photo/2024/04/29/06/21/ai-generated-8726859_960_720.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: 20s;
+    opacity: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+} 
+
+.container span:hover::before{
+    transition: 0s;
+    opacity: 1;
+    width: 1000%;
+    height: 1000%;
+} */
